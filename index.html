@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Palace - Delicious Burgers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hamburger"></i>
+                    <span>Burger</span>Palace
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <a href="#" class="cart-icon" id="cartIcon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Taste the Juiciest Desi Burgers in Town</h1>
+                <p class="hero-subtitle">Made with authentic Indian spices, fresh ingredients, and lots of love. Experience desi burger perfection with every bite!</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Order Now</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Delicious Burger">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Desi Delicious Menu</h2>
+                <p class="section-subtitle">Choose from our handcrafted selection of mouth-watering desi burgers</p>
+            </div>
+            
+            <div class="menu-category">
+                <h3 class="category-title">Signature Desi Burgers</h3>
+                <div class="menu-grid" id="menuGrid">
+                    <!-- Menu items will be loaded by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="menu-category">
+                <h3 class="category-title">Sides & Drinks</h3>
+                <div class="sides-grid" id="sidesGrid">
+                    <!-- Sides items will be loaded by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Desi Story</h2>
+                <p class="section-subtitle">Serving desi happiness since 2015</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Burger Palace Interior">
+                </div>
+                <div class="about-text">
+                    <h3>From Humble Beginnings to Desi Burger Royalty</h3>
+                    <p>Burger Palace started as a small food truck in Mumbai with a big dream: to create the perfect desi burger. What began as a family passion project has grown into a beloved local institution across India.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Fresh Indian Ingredients</h4>
+                            <p>We source only the freshest, highest-quality ingredients from local Indian suppliers.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <h4>Tandoori Style Grilled</h4>
+                            <p>Our burgers are tandoori-grilled to perfection for that authentic Indian smoky flavor.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Made with Indian Love</h4>
+                            <p>Every burger is crafted with care and attention to detail using traditional Indian recipes.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Award Winning</h4>
+                            <p>Voted "Best Desi Burgers in India" for 3 consecutive years.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Indian Customers Say</h2>
+                <p class="section-subtitle">Don't just take our word for it</p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial active" id="testimonial1">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The Desi Tadka Chicken Burger is simply amazing! It reminds me of the flavours from Delhi's street food. Best fusion burger in Mumbai!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Rajesh Kumar">
+                            <div>
+                                <h4>Rajesh Kumar</h4>
+                                <p>Foodie from Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial" id="testimonial2">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"As a vegetarian, I love the Paneer Tikka Burger! It's authentic and delicious. Perfect balance of spices. My go-to place in Bangalore!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Sharma">
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <p>Vegetarian Blogger, Bangalore</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial" id="testimonial3">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The Butter Chicken Burger is revolutionary! It captures the essence of the classic dish in burger form. A must-try for all Delhiites!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Amit Patel">
+                            <div>
+                                <h4>Amit Patel</h4>
+                                <p>Regular Customer, Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <button class="prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Visit Our Outlets</h2>
+                <p class="section-subtitle">Serving authentic Indian fusion burgers across major cities</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Mumbai Outlet</h3>
+                            <p>Shop No. 45, Linking Road, Bandra West, Mumbai, Maharashtra 400050</p>
+                            <p><strong>Landmark:</strong> Near Bandra Station</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone Numbers</h3>
+                            <p><strong>Delivery:</strong> +91 73850 11476</p>
+                            <p><strong>Dine-in:</strong> +91 22 2654 7890</p>
+                            <p><strong>Catering:</strong> +91 98765 43210</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Address</h3>
+                            <p><strong>Orders:</strong> orders@burgerpalace.in</p>
+                            <p><strong>Feedback:</strong> feedback@burgerpalace.in</p>
+                            <p><strong>Corporate:</strong> corporate@burgerpalace.in</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Opening Hours</h3>
+                            <p><strong>Monday-Saturday:</strong> 11:00 AM - 11:00 PM</p>
+                            <p><strong>Sunday:</strong> 11:00 AM - 10:00 PM</p>
+                            <p><strong>Home Delivery:</strong> Till 10:30 PM Daily</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-input" placeholder="Your Full Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" class="form-input" placeholder="Your WhatsApp Number" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="city" class="form-input" required>
+                                <option value="">Select Your City</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="kolkata">Kolkata</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" class="form-input" rows="5" placeholder="Your Message or Special Instructions..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Find Us Across India</h3>
+                    <p>Now serving in Mumbai, Delhi, Bangalore, Hyderabad, Chennai & Kolkata</p>
+                    <p style="margin-top:10px; font-size:0.9rem; color:#777;">Coming soon to Pune, Ahmedabad & Chandigarh!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Your Order</h2>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="cart-body" id="cartBody">
+                <!-- Cart items will be loaded here -->
+                <div class="empty-cart" id="emptyCart">
+                    <i class="fas fa-shopping-basket"></i>
+                    <h3>Your cart is empty</h3>
+                    <p>Add some delicious desi burgers to get started!</p>
+                </div>
+            </div>
+            
+            <div class="cart-footer">
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span class="total-amount">₹<span id="cartTotal">0.00</span></span>
+                    </div>
+                    <p class="cart-note">Free delivery on orders over ₹500</p>
+                </div>
+                
+                <div class="cart-actions">
+                    <button class="btn btn-secondary" id="continueShopping">Continue Shopping</button>
+                    <button class="btn btn-primary" id="checkoutBtn">Checkout Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-hamburger"></i>
+                        <span>Desi</span>Burger Palace
+                    </a>
+                    <p class="footer-description">Serving the most delicious desi burgers since 2015. Authentic Indian taste, quality, and satisfaction guaranteed.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Desi Menu</h3>
+                    <ul class="footer-links">
+                        <li><a href="#menu">Desi Burgers</a></li>
+                        <li><a href="#menu">Veggie Options</a></li>
+                        <li><a href="#menu">Indian Sides</a></li>
+                        <li><a href="#menu">Desi Drinks</a></li>
+                        <li><a href="#menu">Indian Desserts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Multiple outlets across India</p>
+                        <p><i class="fas fa-phone"></i> Delivery: +91 73850 11476</p>
+                        <p><i class="fas fa-envelope"></i> orders@burgerpalace.in</p>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp Orders: +91 98765 43210</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Desi Burger Palace. All rights reserved. | Designed with <i class="fas fa-heart"></i> for desi burger lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
