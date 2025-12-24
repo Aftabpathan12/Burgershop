@@ -1,19 +1,18 @@
-# Burger Palace Website
+# 🍔 Desi Burger Palace (UI Demo)
 
-A fully responsive burger shop website built with HTML, CSS, and JavaScript.
+This project is a **frontend UI demo only** built using:
+- HTML
+- CSS
+- JavaScript
 
-## Features
+🚫 No backend  
+🚫 No real orders  
+🚫 No payments  
+🚫 No data storage  
 
-- 🍔 **Responsive Design** - Works on mobile, tablet, and desktop
-- 🛒 **Interactive Shopping Cart** - Add/remove items, adjust quantities
-- ⭐ **Testimonial Slider** - Customer reviews with auto-rotation
-- 📱 **Mobile-Friendly Navigation** - Hamburger menu for small screens
-- 📝 **Contact Form** - With validation and success messages
-- 💾 **Local Storage** - Cart persists between page visits
-- 🎨 **Modern UI** - Clean design with burger-themed colors
-- 🔗 **Smooth Scrolling** - Navigation between sections
-- 📬 **Notifications** - User feedback for actions
+All content including phone numbers, emails, and checkout
+is **mock/demo only**.
 
-## Project Structure
-"# burgershop" 
+## Live Demo
+Hosted on GitHub Pages for portfolio purposes.
 "# Burgershop" 
