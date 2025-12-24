@@ -1,4 +1,3 @@
-// ===== BURGER SHOP WEBSITE - JAVASCRIPT =====
 
 // Menu Data with Indian Items
 const menuItems = [
@@ -10,14 +9,14 @@ const menuItems = [
         category: "burger",
         image: "https://images.unsplash.com/photo-1603064752734-4c48eff53d05?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
-    {
-        id: 2,
-        name: "Paneer Tikka Burger",
-        description: "Grilled cottage cheese patty with tikka masala, onions, and capsicum in a soft bun.",
-        price: 169,
-        category: "burger",
-        image: "https://images.unsplash.com/photo-1559314809-2b99056a8c4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    },
+   {
+  id: 2,
+  name: "Paneer Tikka Burger",
+  description: "Grilled cottage cheese patty with tikka masala, onions, and capsicum in a soft bun.",
+  price: 169,
+  category: "burger",
+  image: "images/paneer-tikka-burger.jpg"
+},
     {
         id: 3,
         name: "Aloo Tikki Burger",
@@ -510,7 +509,8 @@ function setupEventListeners() {
         const message = document.getElementById('message').value;
         
         // In a real app, you would send this data to a server
-        showNotification(`Dhanyavaad ${name}! We'll contact you on ${phone} shortly.`);
+       showNotification(`Thank you ${name}! This is a demo form. No data is stored.`);
+
         
         // Reset form
         contactForm.reset();
